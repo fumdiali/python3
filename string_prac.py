@@ -1,7 +1,11 @@
 name = input("Enter your name: ")
 print("Hello "+name+".Enter file name to open..")
 file_name = input()
-file_handler = open(file_name)
+try:
+  file_handler = open(file_name)
+except:
+  print("Ooops!"+file_name+" cannot be opened!")
+  exit()
 print("Okay,here is the content of "+file_name+":")
 for line in file_handler:
   #line = line.rstrip()
