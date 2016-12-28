@@ -1,3 +1,4 @@
+#memory intensive,if user inputs millions of numbers
 name = input("Enter a user name:")
 print("*****************")
 print(" Welcome,"+name)
