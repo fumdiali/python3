@@ -3,12 +3,12 @@
 #memory intensive,if user inputs millions of numbers
 name = input("Enter a user name:")
 print("*****************")
-print(" Welcome,"+name)
+print(" Welcome,{}".format(name.capitalize()))
 print("*****************")
 print("Give me some numbers,I will tell you their average..")
 print("Enter '0' when all are in.")
 
-numlist = list()
+numlist = [] #list()
 
 while True:
   user_input = input("Enter a number: ")
@@ -20,4 +20,5 @@ while True:
 #sum() and len() adds the entries and counts them for us,respectively
 avg = sum(numlist)/len(numlist)
 
-print("The average of your "+str(len(numlist))+"  numbers is "+str(avg))
+print("The average of your {} numbers is {}".format(str(len(numlist)),str(avg)))
+print("Thanks,{}!".format(name.capitalize()))
