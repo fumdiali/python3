@@ -6,10 +6,11 @@ print("Hello,{}.Enter file name to open..".format(name.capitalize()))
 file_name = input()
 try:
   file_handler = open(file_name)
+  print("Okay,here comes the content of {}...".format(file_name))
 except:
   print("Ooops!Sorry,{}! {} cannot be opened!".format(name.capitalize(),file_name))
   exit()
-print("Okay,here comes the content of {}...".format(file_name))
+#print("Okay,here comes the content of {}...".format(file_name))
 time.sleep(5)
 for line in file_handler:
   #line = line.rstrip()
